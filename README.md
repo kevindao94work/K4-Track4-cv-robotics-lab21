@@ -1,10 +1,10 @@
-# Lab 21 — Multi-object tracking
+# Lab 21 — Theo dõi nhiều đối tượng
 
-Repository: https://github.com/kevindao94work/cv-robotics-lab21 (PRIVATE), branch `main`, remote `origin`.
+Kho mã: https://github.com/kevindao94work/cv-robotics-lab21, ở chế độ riêng tư (PRIVATE), nhánh `main`, remote `origin`.
 
-Completed IMPLEMENTATION_GUIDE.md against the assigned real dataset: 51 experiment runs, five full-sequence MOT outputs, executed notebook, real TrackEval metrics, and Vietnamese report. Checkpoint acceptance and evidence are recorded in `reports/checkpoints.json`. A checkpoint is not complete merely because its source exists.
+Đã hoàn thành các yêu cầu trong `IMPLEMENTATION_GUIDE.md` trên dữ liệu thật được chỉ định: 51 lượt thí nghiệm, năm kết quả MOT cho toàn bộ chuỗi, notebook đã thực thi, chỉ số tính bằng TrackEval và báo cáo tiếng Việt. Trạng thái nghiệm thu và bằng chứng của từng mốc được ghi trong `reports/checkpoints.json`. Mỗi mốc chỉ được công nhận hoàn thành sau khi đạt các kiểm tra nghiệm thu.
 
-## Reproduce
+## Thiết lập và tái lập
 
 ```sh
 python3.11 -m venv .venv
@@ -22,24 +22,24 @@ export LAB_DATA="$PWD/data/extracted/data_lab21"
 .venv/bin/python -m pytest -v
 .venv/bin/python scripts/run_tracking.py --source "$LAB_DATA/video_1/img1" --seq-name video_1 --tracker bytetrack --conf .30 --iou .50 --max-frames 150 --save-video
 .venv/bin/python scripts/run_experiments.py --phase tracker
-# Review synchronized comparisons before selecting tracker and confidence.
+# Xem các ảnh so sánh đồng bộ trước khi chọn tracker và ngưỡng confidence.
 .venv/bin/python scripts/run_experiments.py --phase conf --tracker bytetrack
 .venv/bin/python scripts/run_experiments.py --phase iou --tracker bytetrack --conf .30
-# Run each evidence-selected config with --out runs/nop_bai, without --max-frames.
+# Chạy từng cấu hình đã chọn với --out runs/nop_bai và không dùng --max-frames.
 .venv/bin/python scripts/evaluate_video1.py
 .venv/bin/python scripts/validate_submission.py
 .venv/bin/python scripts/prepare_submission.py
 ```
 
-Weights are `weights/yolo26n.pt` and `weights/osnet_x0_25_msmt17.pt`; their official source URLs and SHA256 are recorded with environment metadata. Detection uses the one-to-many NMS path (`nms=None`), image size 640 and person class 0. Re-ID runs on CPU, explicitly configured and checked for a live encoder. Seeds are 42; MPS operations are not guaranteed bitwise deterministic. Cache keys include model hash, frame bytes, confidence, NMS IoU, image size and inference mode. Each sequence creates a fresh tracker. Partial runs are rejected by submission validation.
+Hai bộ trọng số là `weights/yolo26n.pt` và `weights/osnet_x0_25_msmt17.pt`; URL nguồn chính thức và SHA256 được lưu cùng thông tin môi trường. Detector dùng nhánh one-to-many có NMS (`nms=None`), kích thước ảnh 640 và lớp người (COCO class 0). Re-ID chạy trên CPU, được cấu hình rõ ràng và kiểm tra encoder thực sự hoạt động. Seed được đặt là 42; các phép toán MPS không bảo đảm kết quả giống nhau từng bit giữa các lần chạy. Khóa bộ nhớ đệm gồm mã băm mô hình, nội dung frame, confidence, NMS IoU, kích thước ảnh và chế độ suy luận. Mỗi chuỗi khởi tạo tracker mới. Bộ kiểm tra bài nộp từ chối kết quả chỉ xử lý một phần chuỗi.
 
-Data, weights, third-party source and environments are excluded from Git. Original GT is used only for video_1, with MOT17 distractor preprocessing. No metrics for video_2–5.
+Dữ liệu, trọng số, mã nguồn bên thứ ba và môi trường cục bộ không được đưa vào Git. Nhãn gốc (GT) chỉ được dùng để đánh giá `video_1`, với bước tiền xử lý các đối tượng gây nhiễu theo MOT17. Không tính HOTA/MOTA/IDF1 cho video 2–5.
 
-## Final results
+## Kết quả cuối cùng
 
-All CP0–CP5 acceptance checks pass. Detector: MPS on Apple Silicon; Re-ID: CPU FP32. All five tracker adapters pass smoke/regression tests; comparative real-video runs use ByteTrack and BoTSORT with live OSNet embeddings.
+Tất cả các mốc CP0–CP5 đã đạt kiểm tra nghiệm thu. Detector chạy MPS trên Apple Silicon; Re-ID chạy CPU FP32. Bộ chuyển đổi của cả năm tracker đều đạt kiểm tra khởi chạy và kiểm thử hồi quy; các thí nghiệm so sánh trên video thật dùng ByteTrack và BoTSORT với encoder OSNet thực sự tạo embeddings.
 
-| Video | Tracker | Confidence | NMS IoU | Frames |
+| Video | Tracker | Ngưỡng confidence | NMS IoU | Số frame |
 |---|---|---|---|---|
 | video_1 | botsort | 0.15 | 0.50 | 600 |
 | video_2 | bytetrack | 0.15 | 0.50 | 1050 |
@@ -47,9 +47,9 @@ All CP0–CP5 acceptance checks pass. Detector: MPS on Apple Silicon; Re-ID: CPU
 | video_4 | bytetrack | 0.30 | 0.50 | 900 |
 | video_5 | bytetrack | 0.30 | 0.50 | 750 |
 
-Video_1 TrackEval: HOTA 27.6804%, MOTA 15.1284%, IDF1 24.4190%. Absolute scores are low due to substantial misses; no quantitative accuracy is claimed for videos 2–5. Comparisons and limitations are in reports/BAO_CAO_LAB21.md.
+Kết quả TrackEval của `video_1`: **HOTA 27,6804%, MOTA 15,1284%, IDF1 24,4190%**. Điểm tuyệt đối còn thấp do bỏ sót nhiều người; video 2–5 chỉ được đánh giá bằng quan sát trực quan. Chi tiết so sánh và các hạn chế nằm trong [báo cáo](reports/BAO_CAO_LAB21.md).
 
-Replay all 51 recorded configurations and final selected runs:
+Chạy lại toàn bộ 51 cấu hình thí nghiệm đã ghi nhận và các cấu hình được chọn cho bài nộp:
 
 ```sh
 .venv/bin/python scripts/reproduce_experiments.py --lab-data-root "$LAB_DATA"
@@ -61,4 +61,4 @@ Replay all 51 recorded configurations and final selected runs:
 .venv/bin/python scripts/prepare_submission.py
 ```
 
-MOT outputs use positive frame/track IDs and one-based bbox origin. The migration script is only for legacy development results; new runs already use the correct origin and must not be translated again. The local submission.zip contains exactly the five TXT files and Vietnamese report; it is intentionally excluded from Git. Receipts for CP0–CP4 are committed in reports/checkpoint_receipts.json; the final CP5 push receipt is stored locally in reports/push_verification.jsonl and its SHA can be verified with git ls-remote origin refs/heads/main.
+Kết quả MOT dùng chỉ số frame và ID track dương, với gốc tọa độ bounding box là `(1,1)`. Script chuyển đổi tọa độ chỉ dành cho các kết quả phát triển cũ; các lượt chạy mới đã dùng đúng gốc tọa độ và không được dịch thêm lần nữa. File cục bộ `submission.zip` chứa đúng năm file TXT và báo cáo tiếng Việt, được loại khỏi Git. Bằng chứng push của CP0–CP4 được lưu trong `reports/checkpoint_receipts.json`; bằng chứng push CP5 được lưu cục bộ trong `reports/push_verification.jsonl`. Có thể kiểm tra SHA trên remote bằng lệnh `git ls-remote origin refs/heads/main`.
