@@ -28,4 +28,4 @@ tests/test_trackers.py::test_tracker[botsort] PASSED                     [ 90%]
 tests/test_trackers.py::test_tracker[strongsort] PASSED                  [ 95%]
 tests/test_trackers.py::test_tracker[deepocsort] PASSED                  [100%]
 
-============================== 20 passed in 3.00s ==============================
+============================== 20 passed in 2.55s ==============================

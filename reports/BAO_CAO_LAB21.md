@@ -123,7 +123,7 @@ Các quyết định là thực nghiệm trên đoạn giới hạn, không kh�
 - video_1: áo tím và áo xanh giữ ID trong cả hai, nhưng đánh giá đủ 600 frame với GT thật cho BoTSORT conf 0,15 HOTA/IDF1 cao hơn ByteTrack conf 0,15, dù MOTA thấp hơn. Vì ưu tiên identity, chuyển sang BoTSORT và chạy sweep riêng của tracker này trước khi chốt.
 - video_2: ByteTrack giữ ID8 cho người nhỏ ở phía trên qua 375–450 mà BoTSORT không giữ trong các ảnh tương ứng. Chưa thấy lợi thế Re-ID; giữ ByteTrack 0,15.
 - video_3: người áo xám/túi đeo ở 301 và 375 giữ BoTSORT ID3; ByteTrack gán ID12 tại 375. Đây là lợi ích identity quan sát được, nên chuyển sang BoTSORT và bổ sung sweeps. Cả hai vẫn có fragmentation ở những người khác.
-- video_4: người áo trắng giữ ByteTrack ID5 tại 301/375/450, BoTSORT chuyển từID5 sangID8 tại 375. Giữ ByteTrack 0,30 vì evidence cụ thể nghiêng về continuity.
+- video_4: người áo trắng giữ ByteTrack ID5 tại 301/375/450, BoTSORT chuyển từID5 sang ID8 tại 375. Giữ ByteTrack 0,30 vì evidence cụ thể nghiêng về continuity.
 - video_5: cả hai không có track tại 301, dù ảnh có người xa; frame 375 và450 có detections lại. Re-ID không giải quyết thiếu detections. Giữ ByteTrack 0,30, hạn chế rõ ở người nhỏ và chuyển động camera.
 
 NMS IoU: các ảnh 50/100/150 không cho cải thiện ổn định khi đổi 0,40 hoặc 0,70. video_4 có cả MOT output giống hệt ở ba ngưỡng. Các video khác có chênh lệch nhẹ về số dòng/tọa độ nhưng số dòng không phải accuracy; giữ 0,50 trừ khi TrackEval video_1 cung cấp bằng chứng khác.
@@ -152,7 +152,7 @@ Tất cả giá trị HOTA/MOTA/IDF1 sau đây là phần trăm, từ TrackEval 
 
 Run final được đánh giá riêng: **HOTA 27.6804, MOTA 15.1284, IDF1 24.4190**. Nguồn: `artifacts/metrics/video_1_metrics.csv`, provenance GT/prediction SHA256 trong `video_1_evaluation.md`. DetA = 13.3834, AssA = 57.2541.
 
-BoTSORT 0,15/0,50 cải thiện association/identity so với ByteTrack 0,15/0,50 nhưng có nhiều FN hơn nên MOTA thấp hơn. Chọn theo mục tiêu ưu tiên giữID; không kết luận tốt hơn trên mọi metric. Điểm tuyệt đối thấp và FN rất lớn: pipeline cố định YOLO26n640 cùng ngưỡng khởi tạo tracker mặc định chưa bao phủ người nhỏ/che khuất. Re-ID không sinh detections bị thiếu. Đây là hạn chế thật, không sửa metric hoặc đổi model để che giấu.
+BoTSORT 0,15/0,50 cải thiện association/identity so với ByteTrack 0,15/0,50 nhưng có nhiều FN hơn nên MOTA thấp hơn. Chọn theo mục tiêu ưu tiên giữ ID; không kết luận tốt hơn trên mọi metric. Điểm tuyệt đối thấp và FN rất lớn: pipeline cố định YOLO26n 640 cùng ngưỡng khởi tạo tracker mặc định chưa bao phủ người nhỏ/che khuất. Re-ID không sinh detections bị thiếu. Đây là hạn chế thật, không sửa metric hoặc đổi model để che giấu.
 
 ## Cấu hình cuối và kết quả full sequence
 
@@ -160,13 +160,15 @@ BoTSORT 0,15/0,50 cải thiện association/identity so với ByteTrack 0,15/0,5
 |---|---|---|---|---|---|---|
 | video_1 | botsort | 0.15 | 0.50 | 600 | 2951 | BoTSORT conf 0,15/iou 0,50 có HOTA và IDF1 cao nhất trong 7 cấu hình full video_1; ưu tiên identity dù MOTA thấp hơn ByteTrack. |
 | video_2 | bytetrack | 0.15 | 0.50 | 1050 | 9244 | ByteTrack giữ người áo trắng qua frame 50–150 ở conf 0,15 và người xa ID8 qua 375–450; Re-ID chưa có lợi thế rõ. |
-| video_3 | botsort | 0.30 | 0.50 | 837 | 3865 | BoTSORT giữ ID3 của người áo xám từ 301 đến 375 trong khi ByteTrack đổi sangID12; sweeps 0,15/0,30/0,50 và IoU 0,40/0,50/0,70 không cải thiện rõ ba người tiền cảnh; giữ 0,30/0,50. |
-| video_4 | bytetrack | 0.30 | 0.50 | 900 | 5493 | ByteTrack giữ người áo trắng ID5 qua 301/375/450; BoTSORT đổiID tại 375. Confidence sweep không cho lợi ích rõ và IoU outputs bằng nhau; giữ 0,30/0,50. |
+| video_3 | botsort | 0.30 | 0.50 | 837 | 3865 | BoTSORT giữ ID3 của người áo xám từ 301 đến 375 trong khi ByteTrack đổi sang ID12; sweeps 0,15/0,30/0,50 và IoU 0,40/0,50/0,70 không cải thiện rõ ba người tiền cảnh; giữ 0,30/0,50. |
+| video_4 | bytetrack | 0.30 | 0.50 | 900 | 5493 | ByteTrack giữ người áo trắng ID5 qua 301/375/450; BoTSORT đổi ID tại 375. Confidence sweep không cho lợi ích rõ và IoU outputs bằng nhau; giữ 0,30/0,50. |
 | video_5 | bytetrack | 0.30 | 0.50 | 750 | 1449 | Hai nhóm tương đương ở người áo hồng và đều mất người xa tại 301; confidence/IoU không cho cải thiện quan sát ổn định; chọn ByteTrack 0,30/0,50. |
 
-Số dòng và số IDs là thống kê predictions, không phải accuracy. Video_2–5 chỉ đánh giá bằng quan sát, không có HOTA/MOTA/IDF1. Năm final run không dùng max-frames. Frame không cótracks không códòngMOT.
+Số dòng và số IDs là thống kê predictions, không phải accuracy. Video_2–5 chỉ đánh giá bằng quan sát, không có HOTA/MOTA/IDF1. Năm final run không dùng max-frames. Frame không có tracks không có dòng MOT.
 
-MOT dùng frame/ID dương và gốc bbox(1,1). Development runs ban đầu được hiệu chỉnh left/top+1 theo tài liệu chính thức TrackEval trước đánh giá; width/height/confidence/ID không đổi. Run final xuất trực tiếp đúng convention, không áp dịch lần hai.
+MOT dùng frame/ID dương và gốc bbox (1,1). Development runs ban đầu được hiệu chỉnh left/top +1 theo tài liệu chính thức TrackEval trước đánh giá; width/height/confidence/ID không đổi. Run final xuất trực tiếp đúng convention, không áp dịch lần hai.
+
+Ngưỡng association giữ nguyên defaults BoxMOT: ByteTrack track_thresh=0,60, BoTSORT new_track_thresh≈0,62465 và track_high_thresh≈0,62969 (artifacts/final_video_qa.json). Vì vậy hạ detector confidence không tự tạo track mới cho mọi detection yếu; điều này giải thích lợi ích coverage hạn chế. Không thay các ngưỡng đó trong thí nghiệm.
 
 ## Kiểm thử, đóng gói và tái lập
 
@@ -180,6 +182,6 @@ Repository PRIVATE: https://github.com/kevindao94work/cv-robotics-lab21; ownerke
 
 ## Thảo luận và kết luận
 
-Re-ID hữu ích cho một số đoạn di chuyển/che khuất ở video_3 và cải thiện identity tổng thể ở video_1. Ở video_4, appearance vẫn đổiID người áo trắng màByteTrack giữ; ở video_2/5, detections người nhỏ là giới hạn lớn hơn matching. Reflection và ánh sáng yếu là rủi ro cảnh quan sát được; không khẳng định chúng gâyFP cụ thể nếu evidence không chứng minh.
+Re-ID hữu ích cho một số đoạn di chuyển/che khuất ở video_3 và cải thiện identity tổng thể ở video_1. Ở video_4, appearance vẫn đổi ID người áo trắng màByteTrack giữ; ở video_2/5, detections người nhỏ là giới hạn lớn hơn matching. Reflection và ánh sáng yếu là rủi ro cảnh quan sát được; không khẳng định chúng gâyFP cụ thể nếu evidence không chứng minh.
 
 Hai đoạn150 frames/video không bao quát mọi tình huống. Việc chọnvideo_1 dựa trên cùng GT dùng đánh giá tạo nguy cơ overfit; không có tập test độc lập. Các tracker giữ cấu hìnhassociation mặc định, chỉ khảo sát detectorconf/NMSIoU vàtracker theo guide. Không tuyên bố tracker tốt nhất toàn cục; kết luận giới hạn ở dữ liệu và cấu hình đã chạy.

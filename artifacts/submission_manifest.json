@@ -1,0 +1,31 @@
+{
+  "zip_sha256": "05bef3150db6c98dd4c58cd1dcdd7b20ef107ee493324805f8363be90a4a75a3",
+  "zip_bytes": 502475,
+  "entries": {
+    "submission/video_1.txt": {
+      "bytes": 166663,
+      "sha256": "5293b72761e6574396b2031f224bad5be37e8b2925df308087f8d88359706dbd"
+    },
+    "submission/video_2.txt": {
+      "bytes": 517095,
+      "sha256": "71e65b1de455cb05c3425ee7d1c5ee43d4548c489c64c668f6de23e7f93f09ee"
+    },
+    "submission/video_3.txt": {
+      "bytes": 213311,
+      "sha256": "b2c4524d961af74fef3f23cbf57497e5436a2468ac3dd3b32e6130ab28ff3841"
+    },
+    "submission/video_4.txt": {
+      "bytes": 310998,
+      "sha256": "cf4b3adee06d3cd9e8d2a49e3f3db5ffe539f37e17161a03b1edf5f118507947"
+    },
+    "submission/video_5.txt": {
+      "bytes": 82006,
+      "sha256": "2e38c96d278df2c3fcfc8972620e27dacdd9aed0ea6917428a8fccaf55d3486a"
+    },
+    "submission/BAO_CAO_LAB21.md": {
+      "bytes": 21884,
+      "sha256": "73dec02ae9f7382d4e4e3d1558e261cd616dd144e35305e6a6bf6148a5f21da8"
+    }
+  },
+  "testzip": null
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "checkpoint": "CP0",
+    "commit": "37e020dc6859b2ac134660d5dd842da05dcef2c0",
+    "remote_sha": "37e020dc6859b2ac134660d5dd842da05dcef2c0",
+    "status": "PUSHED"
+  },
+  {
+    "checkpoint": "CP1",
+    "commit": "95f1a759ef73e518d72a8984d75b602c62f04d5d",
+    "remote_sha": "95f1a759ef73e518d72a8984d75b602c62f04d5d",
+    "status": "PUSHED"
+  },
+  {
+    "checkpoint": "CP2",
+    "commit": "bd54b57535ad900f87b9f04a7e24b61c845c5183",
+    "remote_sha": "bd54b57535ad900f87b9f04a7e24b61c845c5183",
+    "status": "PUSHED"
+  },
+  {
+    "checkpoint": "CP2-corrective",
+    "commit": "18b449503720c99bed33896e628d1d7cda1e1440",
+    "remote_sha": "18b449503720c99bed33896e628d1d7cda1e1440",
+    "status": "PUSHED"
+  },
+  {
+    "checkpoint": "CP3",
+    "commit": "6e445e0d24476a9b4022aea8712a6cda4b8be03e",
+    "remote_sha": "6e445e0d24476a9b4022aea8712a6cda4b8be03e",
+    "status": "PUSHED"
+  },
+  {
+    "checkpoint": "CP4",
+    "commit": "23a1bf0e717e5b29f02289da8711e5fcb27664ab",
+    "remote_sha": "23a1bf0e717e5b29f02289da8711e5fcb27664ab",
+    "status": "PUSHED"
+  }
+]

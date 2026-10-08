@@ -56,5 +56,19 @@
       "artifacts/evaluation_cp4.log"
     ],
     "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
+  },
+  "CP5": {
+    "status": "PASS",
+    "evidence": [
+      "reports/BAO_CAO_LAB21.md",
+      "reports/checkpoint_receipts.json",
+      "artifacts/submission_manifest.json",
+      "artifacts/final_video_qa.json",
+      "artifacts/tests_cp5.log",
+      "artifacts/validation_cp5.log",
+      "artifacts/packaging_cp5.log",
+      "submission.zip"
+    ],
+    "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
   }
 }
