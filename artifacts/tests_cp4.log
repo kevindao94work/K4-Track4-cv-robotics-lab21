@@ -1,0 +1,11 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22
+configfile: pyproject.toml
+plugins: platformdirs-4.12.4, anyio-4.15.1
+collecting ... collected 1 item
+
+tests/test_evaluation.py::test_real_evaluator_regression PASSED          [100%]
+
+============================== 1 passed in 0.25s ===============================

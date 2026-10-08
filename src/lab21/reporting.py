@@ -10,12 +10,15 @@ def sha256(path):
 def validate_submission(folder):
     selected=json.loads(Path('reports/selected_configs.json').read_text())
     dataset=json.loads(Path('artifacts/scene_analysis/dataset_metadata.json').read_text())
+    report=Path('reports/BAO_CAO_LAB21.md').read_text()
     for i in range(1,6):
         name=f'video_{i}';p=folder/f'{name}.txt';m=json.loads((folder/f'{name}_metadata.json').read_text());c=selected[name]
         if not c.get('reason') or not c.get('evidence'):raise ValueError('Missing selection evidence')
         for evidence in c['evidence']:
             if not Path(evidence).is_file():raise ValueError('Missing evidence artifact')
         if Path(c['full_sequence_metadata']).resolve()!=(folder/f'{name}_metadata.json').resolve():raise ValueError('Wrong selected metadata path')
+        expected=f"| {name} | {c['tracker']} | {c['conf']:.2f} | {c['iou']:.2f} |"
+        if expected not in report:raise ValueError('Report configuration mismatch')
         rows=validate_rows(np.loadtxt(p,delimiter=',',ndmin=2))
         if m['bbox_origin']!='one-based':raise ValueError('Wrong MOT coordinate convention')
         if m['sequence']!=name or m['max_frames'] is not None or m['start_frame']!=1:raise ValueError('Partial/wrong sequence')

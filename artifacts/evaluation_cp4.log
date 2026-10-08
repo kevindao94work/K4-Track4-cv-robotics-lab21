@@ -1,0 +1,19 @@
+Error importing BURST due to missing underlying dependency: No module named 'pycocotools'
+
+CLEAR Config:
+THRESHOLD            : 0.5
+PRINT_CONFIG         : True
+
+Identity Config:
+THRESHOLD            : 0.5
+PRINT_CONFIG         : True
+
+Evaluating 1 tracker(s) on 1 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating selected
+
+1 eval_sequence(video_1, selected)                                       0.1424 sec
+
+All sequences for selected finished in 0.14 seconds
+{'HOTA': 27.680372807049547, 'DetA': 13.383368717601165, 'AssA': 57.25413168276289, 'MOTA': 15.128356923739302, 'IDF1': 24.41903699572411, 'IDSW': 8, 'FP': 58, 'FN': 15704}

@@ -45,5 +45,16 @@
       "runs/nop_bai/video_5.txt"
     ],
     "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
+  },
+  "CP4": {
+    "status": "PASS",
+    "evidence": [
+      "artifacts/metrics/video_1_metrics.csv",
+      "artifacts/metrics/video_1_evaluation.md",
+      "artifacts/metrics/video_1_candidates.csv",
+      "artifacts/tests_cp4.log",
+      "artifacts/evaluation_cp4.log"
+    ],
+    "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
   }
 }

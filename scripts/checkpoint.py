@@ -13,6 +13,9 @@ def main():
     log=Path('reports/checkpoints.json');states=json.loads(log.read_text()) if log.exists() else {}
     states[a.checkpoint]={'status':'PASS','evidence':a.evidence,'remote_status':'verification recorded in reports/push_verification.jsonl after commit'}
     log.write_text(json.dumps(states,indent=2))
+    for log in Path('artifacts').rglob('*.log'):
+        if not log.name.endswith('_run.log'):
+            log.write_text('\n'.join(line.rstrip() for line in log.read_text().splitlines())+'\n')
     subprocess.run(['git','add','.'],check=True)
     names=cmd(['git','diff','--cached','--name-only']).splitlines()
     forbidden=['data/','weights/','.venv/','TrackEval/','.env']

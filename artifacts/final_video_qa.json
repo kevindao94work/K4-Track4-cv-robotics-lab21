@@ -1,0 +1,61 @@
+{
+  "video_1": {
+    "frames": 600,
+    "first_last_decode": true,
+    "tracker_parameters": {
+      "det_thresh": 0.3,
+      "track_high_thresh": 0.6296854875023994,
+      "track_low_thresh": 0.1014392537025336,
+      "new_track_thresh": 0.6246494191492591,
+      "match_thresh": 0.7722224024589055,
+      "iou_threshold": 0.3,
+      "use_embeddings": true
+    }
+  },
+  "video_2": {
+    "frames": 1050,
+    "first_last_decode": true,
+    "tracker_parameters": {
+      "det_thresh": 0.6,
+      "track_thresh": 0.6,
+      "match_thresh": 0.9,
+      "iou_threshold": 0.3,
+      "use_embeddings": false
+    }
+  },
+  "video_3": {
+    "frames": 837,
+    "first_last_decode": true,
+    "tracker_parameters": {
+      "det_thresh": 0.3,
+      "track_high_thresh": 0.6296854875023994,
+      "track_low_thresh": 0.1014392537025336,
+      "new_track_thresh": 0.6246494191492591,
+      "match_thresh": 0.7722224024589055,
+      "iou_threshold": 0.3,
+      "use_embeddings": true
+    }
+  },
+  "video_4": {
+    "frames": 900,
+    "first_last_decode": true,
+    "tracker_parameters": {
+      "det_thresh": 0.6,
+      "track_thresh": 0.6,
+      "match_thresh": 0.9,
+      "iou_threshold": 0.3,
+      "use_embeddings": false
+    }
+  },
+  "video_5": {
+    "frames": 750,
+    "first_last_decode": true,
+    "tracker_parameters": {
+      "det_thresh": 0.6,
+      "track_thresh": 0.6,
+      "match_thresh": 0.9,
+      "iou_threshold": 0.3,
+      "use_embeddings": false
+    }
+  }
+}
