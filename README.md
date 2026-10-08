@@ -2,7 +2,7 @@
 
 Repository: https://github.com/kevindao94work/cv-robotics-lab21 (PRIVATE), branch `main`, remote `origin`.
 
-Completed CODEX_IMPLEMENTATION_GUIDE.md against the assigned real dataset: 51 experiment runs, five full-sequence MOT outputs, executed notebook, real TrackEval metrics, and Vietnamese report. Checkpoint acceptance and evidence are recorded in `reports/checkpoints.json`. A checkpoint is not complete merely because its source exists.
+Completed IMPLEMENTATION_GUIDE.md against the assigned real dataset: 51 experiment runs, five full-sequence MOT outputs, executed notebook, real TrackEval metrics, and Vietnamese report. Checkpoint acceptance and evidence are recorded in `reports/checkpoints.json`. A checkpoint is not complete merely because its source exists.
 
 ## Reproduce
 

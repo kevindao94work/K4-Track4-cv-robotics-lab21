@@ -1,7 +1,7 @@
 # K4 · Computer Vision & Robotics — Lab 21
 ## Multi-Object Tracking: Tracker Selection, Experiments & Evaluation
 
-> **Hướng dẫn triển khai dành cho Codex trong thư mục local mới, CHƯA có Git repository và CHƯA có GitHub repository.** Mục tiêu không chỉ là viết code mà phải thực hiện thực nghiệm thật, tạo đủ năm file kết quả MOTChallenge và viết báo cáo tiếng Việt. Nếu tài nguyên bên ngoài không truy cập được, phải phân biệt rõ phần đã hoàn thành với phần bị chặn, không bịa đặt dữ liệu hoặc số liệu.
+> **Hướng dẫn triển khai dành cho người triển khai trong thư mục local mới, CHƯA có Git repository và CHƯA có GitHub repository.** Mục tiêu không chỉ là viết code mà phải thực hiện thực nghiệm thật, tạo đủ năm file kết quả MOTChallenge và viết báo cáo tiếng Việt. Nếu tài nguyên bên ngoài không truy cập được, phải phân biệt rõ phần đã hoàn thành với phần bị chặn, không bịa đặt dữ liệu hoặc số liệu.
 
 ## 0. Vai trò, phạm vi và nguyên tắc bắt buộc
 
@@ -20,17 +20,17 @@ Bạn là Senior Computer Vision / MOT Research Engineer. Hãy tự xây dựng 
 - Dùng video preview 150 frame làm kết quả final full-sequence.
 - Báo cáo những thí nghiệm chưa chạy như thể đã chạy.
 
-**Git/GitHub bắt buộc:** Bắt đầu trong **thư mục local mới** Codex đang mở (có thể chỉ chứa file hướng dẫn này). **Không giả định đã tồn tại `.git`, remote `origin` hay repository trên GitHub.** Trước CP0, chủ động khởi tạo Git, tạo **repository GitHub mới ở chế độ PRIVATE**, kết nối `origin`, duy trì duy nhất nhánh làm việc `main`. Ở **mỗi checkpoint**, sau khi tests và acceptance pass phải commit, `git push origin main` và **xác nhận SHA trên remote trùng SHA local**. Không dừng để hỏi người dùng tên repo, owner hay visibility; chỉ được hỏi khi cần authentication/security authorization thực sự. Không force-push, không chiếm dụng repo có sẵn, không tạo lại repo trong mỗi checkpoint. Xem mục **0A** để thực hiện đầy đủ quy trình bắt buộc.
+**Git/GitHub bắt buộc:** Bắt đầu trong **thư mục local mới** người triển khai đang mở (có thể chỉ chứa file hướng dẫn này). **Không giả định đã tồn tại `.git`, remote `origin` hay repository trên GitHub.** Trước CP0, chủ động khởi tạo Git, tạo **repository GitHub mới ở chế độ PRIVATE**, kết nối `origin`, duy trì duy nhất nhánh làm việc `main`. Ở **mỗi checkpoint**, sau khi tests và acceptance pass phải commit, `git push origin main` và **xác nhận SHA trên remote trùng SHA local**. Không dừng để hỏi người dùng tên repo, owner hay visibility; chỉ được hỏi khi cần authentication/security authorization thực sự. Không force-push, không chiếm dụng repo có sẵn, không tạo lại repo trong mỗi checkpoint. Xem mục **0A** để thực hiện đầy đủ quy trình bắt buộc.
 
 ## 0A. BẮT BUỘC TRƯỚC CP0 — Tạo Git repository local và GitHub repository mới
 
-> **Ngữ cảnh thực tế:** Codex đang chạy trong một **thư mục local hoàn toàn mới**. Chưa có Git history, `.git/`, GitHub repo, hay `origin`. Việc **tạo repository GitHub là một phần nhiệm vụ**, không phải thao tác tùy chọn và không được chờ người dùng tự làm.
+> **Ngữ cảnh thực tế:** người triển khai đang chạy trong một **thư mục local hoàn toàn mới**. Chưa có Git history, `.git/`, GitHub repo, hay `origin`. Việc **tạo repository GitHub là một phần nhiệm vụ**, không phải thao tác tùy chọn và không được chờ người dùng tự làm.
 
 ### A. Quyết định mặc định (không hỏi người dùng)
 
 | Thuộc tính | Giá trị |
 |---|---|
-| Thư mục làm việc | **Thư mục hiện Codex đang mở**, không tự tạo thư mục lồng khác |
+| Thư mục làm việc | **Thư mục hiện người triển khai đang mở**, không tự tạo thư mục lồng khác |
 | GitHub host | `github.com` |
 | GitHub owner | Tài khoản người dùng hiện đang đăng nhập `gh` |
 | Tên repository ưu tiên | `cv-robotics-lab21` |
@@ -208,7 +208,7 @@ Nếu SHA không trùng hoặc push trả lỗi, kiểm tra credentials, URL `or
 
 ### G. Tiêu chí hoàn thành GitHub setup
 
-- [ ] Codex đang làm việc ngay trong thư mục local mới được cung cấp.
+- [ ] người triển khai đang làm việc ngay trong thư mục local mới được cung cấp.
 - [ ] Đã `git init` với nhánh `main` (hoặc xác minh trạng thái đã khởi tạo từ lần chạy trước).
 - [ ] `.gitignore` ngăn datasets, secrets, weights và môi trường local lọt vào Git.
 - [ ] GitHub CLI đã cài và tài khoản được xác thực hợp lệ.
@@ -270,7 +270,7 @@ Tạo cấu trúc gọn gàng (chỉ thêm module thật sự cần dùng):
 ```text
 .
 ├── README.md
-├── CODEX_IMPLEMENTATION_GUIDE.md
+├── IMPLEMENTATION_GUIDE.md
 ├── environment.yml
 ├── pyproject.toml
 ├── requirements-lock.txt
@@ -433,7 +433,7 @@ export LAB_DATA="$(pwd)/data/lab_data"
 python scripts/check_data.py --lab-data-root "$LAB_DATA"
 ```
 
-Nếu lỗi quota/quyền, thử đường dẫn local, cache, download hợp lệ khác; nếu cần quyền truy cập protected resource thì yêu cầu user authorization. **Không lấy dataset khác thay thế**. Việc thử fetch bằng Drive connector trong cuộc trò chuyện trước không thành công; điều đó không chứng minh URL công khai bị hỏng, nên Codex phải tự thử runtime download.
+Nếu lỗi quota/quyền, thử đường dẫn local, cache, download hợp lệ khác; nếu cần quyền truy cập protected resource thì yêu cầu user authorization. **Không lấy dataset khác thay thế**. Việc thử fetch bằng Drive connector trong cuộc trò chuyện trước không thành công; điều đó không chứng minh URL công khai bị hỏng, nên người triển khai phải tự thử runtime download.
 
 ### Bước 2: Xác thực dữ liệu
 
@@ -790,7 +790,7 @@ Không chuyển checkpoint nếu acceptance chưa pass, trừ khi có phụ thu�
 - [ ] Có GitHub repository PRIVATE **mới**, đúng owner, đúng `origin`, branch `main` và URL ghi vào README.
 - [ ] Có commits CP0–CP5, từng checkpoint đã push và SHA trên remote trùng local (hoặc ghi rõ REMOTE_PENDING nếu có outage); Git working tree sạch.
 
-## 11. Final response của Codex
+## 11. Final response của người triển khai
 
 Trả lời bằng tiếng Việt khi hoàn thành. Báo cáo:
 
@@ -816,4 +816,4 @@ Trả lời bằng tiếng Việt khi hoàn thành. Báo cáo:
 - [TrackEval MOTChallenge evaluation](https://github.com/JonathonLuiten/TrackEval/blob/master/docs/MOTChallenge-Official/Readme.md)
 - [MOTChallenge](https://motchallenge.net/)
 
-**End of CODEX_IMPLEMENTATION_GUIDE.md**
+**End of IMPLEMENTATION_GUIDE.md**
