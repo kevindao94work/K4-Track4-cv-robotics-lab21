@@ -21,3 +21,4 @@ runs/experiments/
 runs/thu_nhanh/
 reports/push_verification.jsonl
 artifacts/*_run.log
+submission/

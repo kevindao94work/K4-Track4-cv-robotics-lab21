@@ -25,7 +25,7 @@
   "reid_sha256": null,
   "elapsed_seconds": 4.034206749998702,
   "fps": 37.18203089121504,
-  "tracks_sha256": "742e26cee0218f5aab92c34e675334af7d499d569e6cfb58fcf9b66dc81145d9",
+  "tracks_sha256": "08f6593af0de05a84641de0ed0e9749a34e0f0fbd67547ab3c323dfaa52174b3",
   "versions": {
     "torch": "2.14.1",
     "ultralytics": "8.4.174",
@@ -33,5 +33,7 @@
     "numpy": "2.4.6"
   },
   "seed": 42,
-  "completed_at": "2026-10-08T15:41:11+0700"
+  "completed_at": "2026-10-08T15:41:11+0700",
+  "bbox_origin": "one-based",
+  "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged."
 }

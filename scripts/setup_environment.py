@@ -7,6 +7,17 @@ from lab21.trackers import NAMES,create_tracker,update_tracker
 from lab21.reporting import sha256
 
 def main():
+    import urllib.request
+    sources=json.loads(Path('artifacts/weight_sources.json').read_text())
+    expected={'yolo26n.pt':'9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef','osnet_x0_25_msmt17.pt':'6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99'}
+    Path('weights').mkdir(exist_ok=True)
+    for name,digest in expected.items():
+        p=Path('weights')/name
+        if not p.exists():
+            url=sources[name]
+            if 'drive.google.com' in url:url=url.replace('https://drive.google.com/uc?', 'https://drive.usercontent.google.com/download?')+'&export=download&confirm=t'
+            urllib.request.urlretrieve(url,p)
+        if sha256(p)!=digest:raise RuntimeError('Weight identity/hash mismatch: '+name)
     torch.set_num_threads(4)
     d=Detector();d.detect(np.zeros((320,320,3),np.uint8))
     trackers={};img=np.random.default_rng(42).integers(0,256,(240,320,3),dtype=np.uint8)

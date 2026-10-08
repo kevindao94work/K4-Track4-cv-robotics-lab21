@@ -9,6 +9,6 @@ for f in a.frame:
     pair=[]
     for rows,title in [(left,Path(a.left).parent.name),(right,Path(a.right).parent.name)]:
         r=rows[rows[:,0]==f];tracks=np.column_stack([r[:,2],r[:,3],r[:,2]+r[:,4],r[:,3]+r[:,5],r[:,1],r[:,6],np.zeros(len(r))])
-        img=draw(cv2.imread(str(paths[f-1])),tracks,title+f' frame {f}');h,w=img.shape[:2];pair.append(cv2.resize(img,(640,round(h*640/w))))
+        img=cv2.imread(str(paths[f-1]));h,w=img.shape[:2];tracks[:,:4]-=1;tracks[:,:4]*=640/w;img=cv2.resize(img,(640,round(h*640/w)));img=draw(img,tracks,title.split('_f')[0]+f' frame {f}');pair.append(img)
     tiles.append(np.hstack(pair))
 out=Path(a.out);out.parent.mkdir(parents=True,exist_ok=True);cv2.imwrite(str(out),np.vstack(tiles))

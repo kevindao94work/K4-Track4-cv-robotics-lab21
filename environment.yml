@@ -6,4 +6,5 @@ dependencies:
   - git
   - ffmpeg
   - pip:
+      - -r requirements-lock.txt
       - -e .

@@ -17,7 +17,7 @@ def run(source,seq_name,tracker='bytetrack',conf=.30,iou=.50,out='runs/thu_nhanh
     target=out/f'{seq_name}.txt';meta_path=out/f'{seq_name}_metadata.json'
     if target.exists() or meta_path.exists():raise FileExistsError(f'Refusing overwrite: {target}')
     det=Detector(device=device);t,reid=create_tracker(tracker,'cpu');start=time.perf_counter();writer=None
-    cache=Path(cache_root)/det.model_hash/f'{seq_name}_conf{conf:.2f}_iou{iou:.2f}_640_nms';cache.mkdir(parents=True,exist_ok=True)
+    cache=Path(cache_root)/(det.model_hash+'_'+importlib.metadata.version('ultralytics'))/f'{seq_name}_conf{conf:.2f}_iou{iou:.2f}_640_nms';cache.mkdir(parents=True,exist_ok=True)
     try:
         with target.open('w') as handle:
             for index,path in enumerate(paths,start_frame):
@@ -40,5 +40,5 @@ def run(source,seq_name,tracker='bytetrack',conf=.30,iou=.50,out='runs/thu_nhanh
         if writer:writer.release()
     elapsed=time.perf_counter()-start
     validate_rows(np.loadtxt(target,delimiter=',',ndmin=2))
-    metadata={'sequence':seq_name,'tracker':tracker,'conf':conf,'iou':iou,'source':str(Path(source).resolve()),'input_frames':len(frames(source)),'frames_processed':len(paths),'frame_range':[start_frame,end],'start_frame':start_frame,'max_frames':max_frames,'model':'yolo26n.pt','model_sha256':det.model_hash,'imgsz':640,'classes':[0],'nms_mode':'one-to-many; nms=None','device':det.device,'reid_device':'cpu' if reid else None,'reid_enabled':bool(reid and t.generates_embeddings and t._reid_encoder is not None),'reid_sha256':sha256('weights/osnet_x0_25_msmt17.pt') if reid else None,'elapsed_seconds':elapsed,'fps':len(paths)/elapsed,'tracks_sha256':sha256(target),'versions':{k:importlib.metadata.version(k) for k in ['torch','ultralytics','boxmot','numpy']},'seed':42,'completed_at':time.strftime('%Y-%m-%dT%H:%M:%S%z')}
+    metadata={'sequence':seq_name,'bbox_origin':'one-based','dataset_frame_sha256':json.loads(Path('artifacts/scene_analysis/dataset_metadata.json').read_text())[seq_name]['frame_sha256'],'tracker':tracker,'tracker_parameters':{k:getattr(t,k) for k in ['det_thresh','track_thresh','track_high_thresh','track_low_thresh','new_track_thresh','match_thresh','iou_threshold','with_reid','use_embeddings'] if hasattr(t,k) and isinstance(getattr(t,k),(str,int,float,bool))},'conf':conf,'iou':iou,'source':str(Path(source).resolve()),'input_frames':len(frames(source)),'frames_processed':len(paths),'frame_range':[start_frame,end],'start_frame':start_frame,'max_frames':max_frames,'model':'yolo26n.pt','model_sha256':det.model_hash,'imgsz':640,'classes':[0],'nms_mode':'one-to-many; nms=None','device':det.device,'reid_device':'cpu' if reid else None,'reid_enabled':bool(reid and t.generates_embeddings and t._reid_encoder is not None),'reid_sha256':sha256('weights/osnet_x0_25_msmt17.pt') if reid else None,'elapsed_seconds':elapsed,'fps':len(paths)/elapsed,'tracks_sha256':sha256(target),'versions':{k:importlib.metadata.version(k) for k in ['torch','ultralytics','boxmot','numpy']},'seed':42,'completed_at':time.strftime('%Y-%m-%dT%H:%M:%S%z')}
     meta_path.write_text(json.dumps(metadata,indent=2));return metadata
