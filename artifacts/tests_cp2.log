@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.15, pytest-9.1.1, pluggy-1.6.0 -- /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22
+configfile: pyproject.toml
+plugins: platformdirs-4.12.4, anyio-4.15.1
+collecting ... collected 15 items
+
+tests/test_detector.py::test_detector PASSED                             [  6%]
+tests/test_detector.py::test_nms_iou_changes_overlap PASSED              [ 13%]
+tests/test_trackers.py::test_tracker[bytetrack] PASSED                   [ 20%]
+tests/test_trackers.py::test_tracker[ocsort] PASSED                      [ 26%]
+tests/test_trackers.py::test_tracker[botsort] PASSED                     [ 33%]
+tests/test_trackers.py::test_tracker[strongsort] PASSED                  [ 40%]
+tests/test_trackers.py::test_tracker[deepocsort] PASSED                  [ 46%]
+tests/test_pipeline.py::test_motion_state_and_mot PASSED                 [ 53%]
+tests/test_mot_writer.py::test_write_and_validate PASSED                 [ 60%]
+tests/test_mot_writer.py::test_reject[duplicate] PASSED                  [ 66%]
+tests/test_mot_writer.py::test_reject[nan] PASSED                        [ 73%]
+tests/test_mot_writer.py::test_reject[negative] PASSED                   [ 80%]
+tests/test_mot_writer.py::test_reject[fractional] PASSED                 [ 86%]
+tests/test_mot_writer.py::test_reject[confidence] PASSED                 [ 93%]
+tests/test_mot_writer.py::test_reject[sentinel] PASSED                   [100%]
+
+============================== 15 passed in 2.61s ==============================

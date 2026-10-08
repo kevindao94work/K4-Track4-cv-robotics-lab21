@@ -1,0 +1,37 @@
+{
+  "sequence": "video_1",
+  "tracker": "bytetrack",
+  "conf": 0.3,
+  "iou": 0.5,
+  "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+  "input_frames": 600,
+  "frames_processed": 150,
+  "frame_range": [
+    1,
+    150
+  ],
+  "start_frame": 1,
+  "max_frames": 150,
+  "model": "yolo26n.pt",
+  "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "imgsz": 640,
+  "classes": [
+    0
+  ],
+  "nms_mode": "one-to-many; nms=None",
+  "device": "mps",
+  "reid_device": null,
+  "reid_enabled": false,
+  "reid_sha256": null,
+  "elapsed_seconds": 4.034206749998702,
+  "fps": 37.18203089121504,
+  "tracks_sha256": "742e26cee0218f5aab92c34e675334af7d499d569e6cfb58fcf9b66dc81145d9",
+  "versions": {
+    "torch": "2.14.1",
+    "ultralytics": "8.4.174",
+    "boxmot": "25.0.0",
+    "numpy": "2.4.6"
+  },
+  "seed": 42,
+  "completed_at": "2026-10-08T15:41:11+0700"
+}

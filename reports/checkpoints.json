@@ -19,5 +19,15 @@
       "artifacts/tests_cp1.log"
     ],
     "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
+  },
+  "CP2": {
+    "status": "PASS",
+    "evidence": [
+      "artifacts/baseline_metadata.json",
+      "artifacts/scene_analysis/baseline.jpg",
+      "artifacts/scene_analysis/baseline_observation.md",
+      "artifacts/tests_cp2.log"
+    ],
+    "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
   }
 }

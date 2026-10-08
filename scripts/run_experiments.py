@@ -16,7 +16,7 @@ def execute(root,video,tracker,conf,iou,start,count):
         with log.open() as f:rows=list(csv.DictReader(f))
     if not any(r['video']==video and r['experiment_id']==eid for r in rows):
         rows.append(dict(video=video,experiment_id=eid,tracker=tracker,conf=conf,iou=iou,frames=m['frames_processed'],frame_range=str(m['frame_range']),reid_enabled=m['reid_enabled'],device=m['device'],elapsed_seconds=m['elapsed_seconds'],fps=m['fps'],observations='Awaiting visual review',decision='pending',reason='Requires observed evidence',status='completed'))
-        with log.open('w',newline='') as f:w=csv.DictWriter(f,fieldnames=FIELDS);w.writeheader();w.writerows(rows)
+        with log.open('w',newline='') as f:w=csv.DictWriter(f,fieldnames=FIELDS,lineterminator="\n");w.writeheader();w.writerows(rows)
     return m
 
 def main():

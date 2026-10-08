@@ -1,0 +1,8 @@
+video,experiment_id,tracker,conf,iou,frames,frame_range,reid_enabled,device,elapsed_seconds,fps,observations,decision,reason,status
+video_1,bytetrack_conf030_iou050_f1_150,bytetrack,0.3,0.5,150,"[1, 150]",False,mps,1.3843485830002464,108.35421211246567,Awaiting visual review,pending,Requires observed evidence,completed
+video_1,botsort_conf030_iou050_f1_150,botsort,0.3,0.5,150,"[1, 150]",True,mps,5.8106619579994,25.814614769234435,Awaiting visual review,pending,Requires observed evidence,completed
+video_2,bytetrack_conf030_iou050_f1_150,bytetrack,0.3,0.5,150,"[1, 150]",False,mps,4.322985834001884,34.69824000351666,Awaiting visual review,pending,Requires observed evidence,completed
+video_2,botsort_conf030_iou050_f1_150,botsort,0.3,0.5,150,"[1, 150]",True,mps,6.655357792002178,22.53823230664725,Awaiting visual review,pending,Requires observed evidence,completed
+video_3,bytetrack_conf030_iou050_f1_150,bytetrack,0.3,0.5,150,"[1, 150]",False,mps,3.080154624996794,48.69885387658294,Awaiting visual review,pending,Requires observed evidence,completed
+video_3,botsort_conf030_iou050_f1_150,botsort,0.3,0.5,150,"[1, 150]",True,mps,3.584333290997165,41.848786879489616,Awaiting visual review,pending,Requires observed evidence,completed
+video_4,bytetrack_conf030_iou050_f1_150,bytetrack,0.3,0.5,150,"[1, 150]",False,mps,3.848943249999138,38.97173594337448,Awaiting visual review,pending,Requires observed evidence,completed
