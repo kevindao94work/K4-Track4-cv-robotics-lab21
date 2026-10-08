@@ -1,0 +1,3 @@
+import argparse
+from lab21.pipeline import run
+p=argparse.ArgumentParser();p.add_argument('--source',required=True);p.add_argument('--seq-name',required=True);p.add_argument('--tracker',choices=['bytetrack','ocsort','botsort','strongsort','deepocsort'],default='bytetrack');p.add_argument('--conf',type=float,default=.30);p.add_argument('--iou',type=float,default=.50);p.add_argument('--out',default='runs/thu_nhanh');p.add_argument('--save-video',action='store_true');p.add_argument('--max-frames',type=int);p.add_argument('--start-frame',type=int,default=1);p.add_argument('--device');a=p.parse_args();run(**vars(a))

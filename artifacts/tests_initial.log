@@ -1,0 +1,181 @@
+.............F.FFFFF                                                     [100%]
+=================================== FAILURES ===================================
+__________________________ test_motion_state_and_mot ___________________________
+
+    def test_motion_state_and_mot():
+        t,_=create_tracker('bytetrack');img=np.zeros((240,320,3),np.uint8);f=io.StringIO()
+        for n in range(1,6):
+>           tracks=update_tracker(t,np.array([[20+n,20,80+n,180,.9,0]],np.float32),img);write_frame(f,n,tracks)
+                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_pipeline.py:9:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src/lab21/mot_writer.py:19: in write_frame
+    rows=validate_rows(rows)
+         ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+rows = array([[          1,           0,          21,          20,          60,         160,         0.9,          -1,          -1,          -1]])
+
+    def validate_rows(rows):
+        rows=np.asarray(rows,dtype=float)
+        if rows.ndim!=2 or rows.shape[1]!=10 or not len(rows): raise ValueError('Expected nonempty 10-column MOT rows')
+        if not np.isfinite(rows).all(): raise ValueError('Nonfinite MOT values')
+>       if (rows[:,:2]<1).any() or (rows[:,:2]!=np.floor(rows[:,:2])).any(): raise ValueError('Invalid frame/ID')
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Invalid frame/ID
+
+src/lab21/mot_writer.py:7: ValueError
+----------------------------- Captured stderr call -----------------------------
+INFO     ByteTrack: det_thresh=0.3, max_age=30, max_obs=50, min_hits=3,
+         iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou,
+         variable_dt=False
+___________________________ test_tracker[bytetrack] ____________________________
+
+name = 'bytetrack'
+
+    @pytest.mark.parametrize('name',NAMES)
+    def test_tracker(name):
+        t,reid=create_tracker(name)
+        img=np.random.default_rng(42).integers(0,256,(240,320,3),dtype=np.uint8)
+        d=np.array([[20,20,80,180,.9,0]],np.float32)
+        for _ in range(4):r=update_tracker(t,d,img)
+>       assert r.shape[1]==7;assert len(r)==1;assert r[0,4]>=1
+                                              ^^^^^^^^^^^^^^^^
+E       assert np.float64(0.0) >= 1
+
+tests/test_trackers.py:10: AssertionError
+----------------------------- Captured stderr call -----------------------------
+INFO     ByteTrack: det_thresh=0.3, max_age=30, max_obs=50, min_hits=3,
+         iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou,
+         variable_dt=False
+------------------------------ Captured log call -------------------------------
+INFO     boxmot:base.py:252 ByteTrack: det_thresh=0.3, max_age=30, max_obs=50, min_hits=3, iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou, variable_dt=False
+_____________________________ test_tracker[ocsort] _____________________________
+
+name = 'ocsort'
+
+    @pytest.mark.parametrize('name',NAMES)
+    def test_tracker(name):
+        t,reid=create_tracker(name)
+        img=np.random.default_rng(42).integers(0,256,(240,320,3),dtype=np.uint8)
+        d=np.array([[20,20,80,180,.9,0]],np.float32)
+        for _ in range(4):r=update_tracker(t,d,img)
+>       assert r.shape[1]==7;assert len(r)==1;assert r[0,4]>=1
+                                              ^^^^^^^^^^^^^^^^
+E       assert np.float64(0.0) >= 1
+
+tests/test_trackers.py:10: AssertionError
+----------------------------- Captured stderr call -----------------------------
+INFO     OcSort: det_thresh=0.6, max_age=30, max_obs=50, min_hits=3,
+         iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou,
+         variable_dt=False
+------------------------------ Captured log call -------------------------------
+INFO     boxmot:base.py:252 OcSort: det_thresh=0.6, max_age=30, max_obs=50, min_hits=3, iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou, variable_dt=False
+____________________________ test_tracker[botsort] _____________________________
+
+name = 'botsort'
+
+    @pytest.mark.parametrize('name',NAMES)
+    def test_tracker(name):
+        t,reid=create_tracker(name)
+        img=np.random.default_rng(42).integers(0,256,(240,320,3),dtype=np.uint8)
+        d=np.array([[20,20,80,180,.9,0]],np.float32)
+        for _ in range(4):r=update_tracker(t,d,img)
+>       assert r.shape[1]==7;assert len(r)==1;assert r[0,4]>=1
+                                              ^^^^^^^^^^^^^^^^
+E       assert np.float64(0.0) >= 1
+
+tests/test_trackers.py:10: AssertionError
+----------------------------- Captured stderr call -----------------------------
+INFO     BotSort: det_thresh=0.3, max_age=30, max_obs=50, min_hits=3,
+         iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou,
+         variable_dt=False
+INFO     /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights
+         /osnet_x0_25_msmt17.pt
+INFO     [PID 18568] Found existing ReID weights at
+         /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights
+         /osnet_x0_25_msmt17.pt; skipping download.
+INFO     Loaded deployed weights from
+         /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights
+         /osnet_x0_25_msmt17.pt: 565/565 required tensors, 100.00% required
+         elements
+------------------------------ Captured log call -------------------------------
+INFO     boxmot:base.py:252 BotSort: det_thresh=0.3, max_age=30, max_obs=50, min_hits=3, iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou, variable_dt=False
+INFO     boxmot:base_backend.py:26 /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights/osnet_x0_25_msmt17.pt
+INFO     boxmot:base_backend.py:167 [PID 18568] Found existing ReID weights at /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights/osnet_x0_25_msmt17.pt; skipping download.
+INFO     boxmot:registry.py:582 Loaded deployed weights from /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights/osnet_x0_25_msmt17.pt: 565/565 required tensors, 100.00% required elements
+___________________________ test_tracker[strongsort] ___________________________
+
+name = 'strongsort'
+
+    @pytest.mark.parametrize('name',NAMES)
+    def test_tracker(name):
+        t,reid=create_tracker(name)
+        img=np.random.default_rng(42).integers(0,256,(240,320,3),dtype=np.uint8)
+        d=np.array([[20,20,80,180,.9,0]],np.float32)
+        for _ in range(4):r=update_tracker(t,d,img)
+>       assert r.shape[1]==7;assert len(r)==1;assert r[0,4]>=1
+                                              ^^^^^^^^^^^^^^^^
+E       assert np.float64(0.0) >= 1
+
+tests/test_trackers.py:10: AssertionError
+----------------------------- Captured stderr call -----------------------------
+INFO     StrongSort: det_thresh=0.3, max_age=30, max_obs=50, min_hits=3,
+         iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou,
+         variable_dt=False
+INFO     /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights
+         /osnet_x0_25_msmt17.pt
+INFO     [PID 18568] Found existing ReID weights at
+         /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights
+         /osnet_x0_25_msmt17.pt; skipping download.
+INFO     Loaded deployed weights from
+         /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights
+         /osnet_x0_25_msmt17.pt: 565/565 required tensors, 100.00% required
+         elements
+------------------------------ Captured log call -------------------------------
+INFO     boxmot:base.py:252 StrongSort: det_thresh=0.3, max_age=30, max_obs=50, min_hits=3, iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou, variable_dt=False
+INFO     boxmot:base_backend.py:26 /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights/osnet_x0_25_msmt17.pt
+INFO     boxmot:base_backend.py:167 [PID 18568] Found existing ReID weights at /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights/osnet_x0_25_msmt17.pt; skipping download.
+INFO     boxmot:registry.py:582 Loaded deployed weights from /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights/osnet_x0_25_msmt17.pt: 565/565 required tensors, 100.00% required elements
+___________________________ test_tracker[deepocsort] ___________________________
+
+name = 'deepocsort'
+
+    @pytest.mark.parametrize('name',NAMES)
+    def test_tracker(name):
+        t,reid=create_tracker(name)
+        img=np.random.default_rng(42).integers(0,256,(240,320,3),dtype=np.uint8)
+        d=np.array([[20,20,80,180,.9,0]],np.float32)
+        for _ in range(4):r=update_tracker(t,d,img)
+>       assert r.shape[1]==7;assert len(r)==1;assert r[0,4]>=1
+                                              ^^^^^^^^^^^^^^^^
+E       assert np.float64(0.0) >= 1
+
+tests/test_trackers.py:10: AssertionError
+----------------------------- Captured stderr call -----------------------------
+INFO     DeepOcSort: det_thresh=0.5, max_age=30, max_obs=50, min_hits=3,
+         iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou,
+         variable_dt=False
+INFO     /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights
+         /osnet_x0_25_msmt17.pt
+INFO     [PID 18568] Found existing ReID weights at
+         /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights
+         /osnet_x0_25_msmt17.pt; skipping download.
+INFO     Loaded deployed weights from
+         /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights
+         /osnet_x0_25_msmt17.pt: 565/565 required tensors, 100.00% required
+         elements
+------------------------------ Captured log call -------------------------------
+INFO     boxmot:base.py:252 DeepOcSort: det_thresh=0.5, max_age=30, max_obs=50, min_hits=3, iou_threshold=0.3, per_class=False, class_ids=None, asso_func=iou, variable_dt=False
+INFO     boxmot:base_backend.py:26 /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights/osnet_x0_25_msmt17.pt
+INFO     boxmot:base_backend.py:167 [PID 18568] Found existing ReID weights at /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights/osnet_x0_25_msmt17.pt; skipping download.
+INFO     boxmot:registry.py:582 Loaded deployed weights from /Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/weights/osnet_x0_25_msmt17.pt: 565/565 required tensors, 100.00% required elements
+=========================== short test summary info ============================
+FAILED tests/test_pipeline.py::test_motion_state_and_mot - ValueError: Invali...
+FAILED tests/test_trackers.py::test_tracker[bytetrack] - assert np.float64(0....
+FAILED tests/test_trackers.py::test_tracker[ocsort] - assert np.float64(0.0) ...
+FAILED tests/test_trackers.py::test_tracker[botsort] - assert np.float64(0.0)...
+FAILED tests/test_trackers.py::test_tracker[strongsort] - assert np.float64(0...
+FAILED tests/test_trackers.py::test_tracker[deepocsort] - assert np.float64(0...
+6 failed, 14 passed in 4.05s

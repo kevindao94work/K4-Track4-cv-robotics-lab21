@@ -1,0 +1,6 @@
+{
+  "yolo26n.pt": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt",
+  "osnet_x0_25_msmt17.pt": "https://drive.google.com/uc?id=1sSwXSUlj4_tHZequ_iZ8w_Jh0VaRQMqF",
+  "reid_source_profile": "https://github.com/mikel-brostrom/boxmot/blob/master/boxmot/configs/reid/osnet-x0-25-msmt17.yaml",
+  "dataset": "https://drive.google.com/file/d/1UeVPQd6j5pSzxoJDcKJrerT9SL3vJLDt/view"
+}

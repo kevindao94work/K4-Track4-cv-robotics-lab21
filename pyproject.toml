@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "cv-robotics-lab21"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["ultralytics", "boxmot", "gdown", "pyyaml", "pandas", "matplotlib", "pytest", "ipykernel", "nbformat", "nbclient", "nbconvert", "imageio-ffmpeg"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]

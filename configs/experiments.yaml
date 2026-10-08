@@ -1,0 +1,6 @@
+trackers: [bytetrack, botsort]
+confidence: [0.15, 0.30, 0.50]
+nms_iou: [0.40, 0.50, 0.70]
+baseline: {conf: 0.30, iou: 0.50}
+representative_frames: 150
+verification_start: 301

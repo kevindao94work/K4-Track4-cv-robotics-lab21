@@ -1,0 +1,7 @@
+model: weights/yolo26n.pt
+imgsz: 640
+classes: [0]
+reid_model: weights/osnet_x0_25_msmt17.pt
+conf: 0.30
+iou: 0.50
+seed: 42

@@ -1,0 +1,12 @@
+{
+  "CP0": {
+    "status": "PASS",
+    "evidence": [
+      "artifacts/environment.json",
+      "artifacts/setup_smoke.log",
+      "artifacts/tests_cp0.log",
+      "requirements-lock.txt"
+    ],
+    "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
+  }
+}

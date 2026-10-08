@@ -1,0 +1,92 @@
+{
+  "video_1": {
+    "fps": 30.0,
+    "gt_inspection": {
+      "columns": 9,
+      "frame_range": [
+        1,
+        600
+      ],
+      "annotated_frames": 600,
+      "classes": {
+        "1": 18581,
+        "2": 1549,
+        "4": 1559,
+        "7": 5271,
+        "8": 1200,
+        "9": 1843
+      },
+      "valid_person_rows": 18581,
+      "coordinate_convention": "MOTChallenge left/top/width/height; 1-based frames; original GT retained",
+      "preprocessing": "MOT17 distractors and zero-marked boxes handled by TrackEval"
+    },
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1",
+    "frames": 600,
+    "dimensions": [
+      [
+        1080,
+        1920
+      ]
+    ],
+    "frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "gt": [
+      "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/gt/gt.txt"
+    ]
+  },
+  "video_2": {
+    "fps": null,
+    "gt_inspection": null,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_2",
+    "frames": 1050,
+    "dimensions": [
+      [
+        1080,
+        1920
+      ]
+    ],
+    "frame_sha256": "a16388acb7932ccdc8245d38792d73f9b99891685d38e00abf5137f9185bbbad",
+    "gt": []
+  },
+  "video_3": {
+    "fps": null,
+    "gt_inspection": null,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3",
+    "frames": 837,
+    "dimensions": [
+      [
+        480,
+        640
+      ]
+    ],
+    "frame_sha256": "888f0e765026250601893917bd9018681378e3a8e1ab6a1ba0dac3abb3c721aa",
+    "gt": []
+  },
+  "video_4": {
+    "fps": null,
+    "gt_inspection": null,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_4",
+    "frames": 900,
+    "dimensions": [
+      [
+        1080,
+        1920
+      ]
+    ],
+    "frame_sha256": "ad08f8cb6ecc99fa665a536fba3523b6d7d6b49de655988b9b42f26a209694ed",
+    "gt": []
+  },
+  "video_5": {
+    "fps": null,
+    "gt_inspection": null,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5",
+    "frames": 750,
+    "dimensions": [
+      [
+        1080,
+        1920
+      ]
+    ],
+    "frame_sha256": "fbb4014016a39de5dd3f644c2b60820839041cf6a37238b678f1fd212af7c4b5",
+    "gt": []
+  }
+}

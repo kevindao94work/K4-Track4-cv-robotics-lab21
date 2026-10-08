@@ -1,0 +1,59 @@
+{
+  "python": "3.11.15",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "detector_device": "mps",
+  "reid_device": "cpu",
+  "torch": "2.14.1",
+  "cuda_available": false,
+  "mps_available": true,
+  "versions": {
+    "ultralytics": "8.4.174",
+    "boxmot": "25.0.0",
+    "numpy": "2.4.6",
+    "opencv-python": "4.14.0.94",
+    "trackeval": "1.0.dev1"
+  },
+  "trackeval_commit": "12c8791b303e0a0b50f753af204249e622d0281a",
+  "weights": {
+    "osnet_x0_25_msmt17.pt": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "yolo26n.pt": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef"
+  },
+  "trackers": {
+    "bytetrack": {
+      "output_shape": [
+        1,
+        7
+      ],
+      "reid_enabled": false
+    },
+    "ocsort": {
+      "output_shape": [
+        1,
+        7
+      ],
+      "reid_enabled": false
+    },
+    "botsort": {
+      "output_shape": [
+        1,
+        7
+      ],
+      "reid_enabled": true
+    },
+    "strongsort": {
+      "output_shape": [
+        1,
+        7
+      ],
+      "reid_enabled": true
+    },
+    "deepocsort": {
+      "output_shape": [
+        1,
+        7
+      ],
+      "reid_enabled": true
+    }
+  },
+  "codec": "mp4v write/read passed"
+}
