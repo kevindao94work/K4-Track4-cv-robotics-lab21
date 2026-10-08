@@ -1,0 +1,72 @@
+{
+  "video_1": {
+    "tracker": "botsort",
+    "conf": 0.15,
+    "iou": 0.5,
+    "reason": "BoTSORT conf0,15/iou0,50 có HOTA và IDF1 cao nhất trong 7 cấu hình full video_1; ưu tiên identity dù MOTA thấp hơn ByteTrack.",
+    "evidence": [
+      "artifacts/comparisons/video_1_trackers.jpg",
+      "artifacts/comparisons/video_1_verification.jpg",
+      "artifacts/comparisons/video_1_confidence.jpg",
+      "artifacts/comparisons/video_1_iou.jpg",
+      "artifacts/comparisons/video_1_botsort_confidence.jpg",
+      "artifacts/comparisons/video_1_botsort_iou.jpg",
+      "artifacts/metrics/video_1_candidates.csv"
+    ],
+    "full_sequence_metadata": "runs/nop_bai/video_1_metadata.json"
+  },
+  "video_2": {
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.5,
+    "reason": "ByteTrack giữ người áo trắng qua frame50–150 ở conf0,15 và người xa ID8 qua375–450; Re-ID chưa có lợi thế rõ.",
+    "evidence": [
+      "artifacts/comparisons/video_2_trackers.jpg",
+      "artifacts/comparisons/video_2_verification.jpg",
+      "artifacts/comparisons/video_2_confidence.jpg",
+      "artifacts/comparisons/video_2_iou.jpg"
+    ],
+    "full_sequence_metadata": "runs/nop_bai/video_2_metadata.json"
+  },
+  "video_3": {
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "reason": "BoTSORT giữ ID3 của người áo xám từ301 đến375 trong khi ByteTrack đổi sangID12; sweeps0,15/0,30/0,50 và IoU0,40/0,50/0,70 không cải thiện rõ ba người tiền cảnh; giữ0,30/0,50.",
+    "evidence": [
+      "artifacts/comparisons/video_3_trackers.jpg",
+      "artifacts/comparisons/video_3_verification.jpg",
+      "artifacts/comparisons/video_3_confidence.jpg",
+      "artifacts/comparisons/video_3_iou.jpg",
+      "artifacts/comparisons/video_3_botsort_confidence.jpg",
+      "artifacts/comparisons/video_3_botsort_iou.jpg"
+    ],
+    "full_sequence_metadata": "runs/nop_bai/video_3_metadata.json"
+  },
+  "video_4": {
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "reason": "ByteTrack giữ người áo trắng ID5 qua301/375/450; BoTSORT đổiID tại375. Confidence sweep không cho lợi ích rõ và IoU outputs bằng nhau; giữ0,30/0,50.",
+    "evidence": [
+      "artifacts/comparisons/video_4_trackers.jpg",
+      "artifacts/comparisons/video_4_verification.jpg",
+      "artifacts/comparisons/video_4_confidence.jpg",
+      "artifacts/comparisons/video_4_iou.jpg"
+    ],
+    "full_sequence_metadata": "runs/nop_bai/video_4_metadata.json"
+  },
+  "video_5": {
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "reason": "Hai nhóm tương đương ở người áo hồng và đều mất người xa tại301; confidence/IoU không cho cải thiện quan sát ổn định; chọn ByteTrack0,30/0,50.",
+    "evidence": [
+      "artifacts/comparisons/video_5_trackers.jpg",
+      "artifacts/comparisons/video_5_verification.jpg",
+      "artifacts/comparisons/video_5_confidence.jpg",
+      "artifacts/comparisons/video_5_iou.jpg"
+    ],
+    "full_sequence_metadata": "runs/nop_bai/video_5_metadata.json"
+  }
+}

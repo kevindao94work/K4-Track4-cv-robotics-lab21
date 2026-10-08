@@ -1,0 +1,46 @@
+{
+  "sequence": "video_5",
+  "bbox_origin": "one-based",
+  "dataset_frame_sha256": "fbb4014016a39de5dd3f644c2b60820839041cf6a37238b678f1fd212af7c4b5",
+  "tracker": "bytetrack",
+  "tracker_parameters": {
+    "det_thresh": 0.6,
+    "track_thresh": 0.6,
+    "match_thresh": 0.9,
+    "iou_threshold": 0.3,
+    "use_embeddings": false
+  },
+  "conf": 0.3,
+  "iou": 0.5,
+  "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5/img1",
+  "input_frames": 750,
+  "frames_processed": 750,
+  "frame_range": [
+    1,
+    750
+  ],
+  "start_frame": 1,
+  "max_frames": null,
+  "model": "yolo26n.pt",
+  "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "imgsz": 640,
+  "classes": [
+    0
+  ],
+  "nms_mode": "one-to-many; nms=None",
+  "device": "mps",
+  "reid_device": null,
+  "reid_enabled": false,
+  "reid_sha256": null,
+  "elapsed_seconds": 16.33310116699795,
+  "fps": 45.91902005207816,
+  "tracks_sha256": "2e38c96d278df2c3fcfc8972620e27dacdd9aed0ea6917428a8fccaf55d3486a",
+  "versions": {
+    "torch": "2.14.1",
+    "ultralytics": "8.4.174",
+    "boxmot": "25.0.0",
+    "numpy": "2.4.6"
+  },
+  "seed": 42,
+  "completed_at": "2026-10-08T15:54:59+0700"
+}

@@ -1,0 +1,2063 @@
+[
+  {
+    "sequence": "video_1",
+    "dataset_frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "tracker": "botsort",
+    "conf": 0.15,
+    "iou": 0.4,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 600,
+    "frame_range": [
+      1,
+      600
+    ],
+    "start_frame": 1,
+    "max_frames": null,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 46.471062249998795,
+    "fps": 12.911260706118581,
+    "tracks_sha256": "f741ed72e1a745ceffe9d87067a38fce6d7ef29bc67013c451cc90a3e671a205",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:49:36+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf015_iou040_f1_None"
+  },
+  {
+    "sequence": "video_1",
+    "dataset_frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "tracker": "botsort",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 600,
+    "frame_range": [
+      1,
+      600
+    ],
+    "start_frame": 1,
+    "max_frames": null,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 38.301733542000875,
+    "fps": 15.665087308438732,
+    "tracks_sha256": "5293b72761e6574396b2031f224bad5be37e8b2925df308087f8d88359706dbd",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:46:38+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf015_iou050_f1_None"
+  },
+  {
+    "sequence": "video_1",
+    "dataset_frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "tracker": "botsort",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 8.498721417003253,
+    "fps": 17.649713720454166,
+    "tracks_sha256": "39b820897aa23fa3f486e31b57e0a572d4ddf55402f8fe120b32ab3050d4946f",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:44:29+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf015_iou050_f301_150"
+  },
+  {
+    "sequence": "video_1",
+    "dataset_frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "tracker": "botsort",
+    "conf": 0.15,
+    "iou": 0.7,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 600,
+    "frame_range": [
+      1,
+      600
+    ],
+    "start_frame": 1,
+    "max_frames": null,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 75.41489399999773,
+    "fps": 7.955988110253368,
+    "tracks_sha256": "9fdbdba8e6eb4fa685277768433f0281557537659e76f1d11ea8932a6bd1f355",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:50:51+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf015_iou070_f1_None"
+  },
+  {
+    "sequence": "video_1",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 5.8106619579994,
+    "fps": 25.814614769234435,
+    "tracks_sha256": "26d103b40ff9515545378b7df18def03f0b2e848fa0f5cfb5a4b2bea556a301f",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:41:41+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_1",
+    "dataset_frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 600,
+    "frame_range": [
+      1,
+      600
+    ],
+    "start_frame": 1,
+    "max_frames": null,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 28.470852458998706,
+    "fps": 21.07418458453497,
+    "tracks_sha256": "9aa216678d8b94e49ceac0781f33d7f0a6ef1ce62a785585a9ab52b154cdd103",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:48:17+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou050_f1_None"
+  },
+  {
+    "sequence": "video_1",
+    "dataset_frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "tracker": "botsort",
+    "conf": 0.5,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 600,
+    "frame_range": [
+      1,
+      600
+    ],
+    "start_frame": 1,
+    "max_frames": null,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 32.1865847079971,
+    "fps": 18.641306788008595,
+    "tracks_sha256": "a271e1a1caed9b820b1355723201277f94525e11d37c441f0e28dd76b0e3f895",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:48:49+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf050_iou050_f1_None"
+  },
+  {
+    "sequence": "video_1",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.4,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 4.21587924999767,
+    "fps": 35.5797666643519,
+    "tracks_sha256": "1cca512bc9d6a253e16ade0fcf2f92ae1d8d391ca284d0c7d8555964883eac26",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:25+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou040_f1_150"
+  },
+  {
+    "sequence": "video_1",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 4.201698332999513,
+    "fps": 35.69984994446706,
+    "tracks_sha256": "00c62af3ef16805435a528ea48bb4230b3e770e0fb4efed9f3c361757f73ebd6",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:35+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou050_f1_150"
+  },
+  {
+    "sequence": "video_1",
+    "dataset_frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 600,
+    "frame_range": [
+      1,
+      600
+    ],
+    "start_frame": 1,
+    "max_frames": null,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 12.881455499998992,
+    "fps": 46.578587334330884,
+    "tracks_sha256": "eb228cbd120ce909ff79e0004b8837c7dc61d4909953d258b2f1ab83163f4a8d",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:45:59+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou050_f1_None"
+  },
+  {
+    "sequence": "video_1",
+    "dataset_frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 4.401408625002659,
+    "fps": 34.07999865041146,
+    "tracks_sha256": "c1fe42c03b2c22198b3a9803dafb60e8bb873e771ae65bc11c02db0f042cf09e",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:44:21+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou050_f301_150"
+  },
+  {
+    "sequence": "video_1",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.7,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.3581998750014463,
+    "fps": 44.666787440677695,
+    "tracks_sha256": "2cee35fe893f6c6a6e5894dea834525d61c6442fbee6513bbb95101ff474fec5",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:29+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou070_f1_150"
+  },
+  {
+    "sequence": "video_1",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 1.3843485830002464,
+    "fps": 108.35421211246567,
+    "tracks_sha256": "08f6593af0de05a84641de0ed0e9749a34e0f0fbd67547ab3c323dfaa52174b3",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:41:35+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_1",
+    "dataset_frame_sha256": "a63dc3c079ed1ed322570afbad96cf20e24636cca6961f1620980edeb6df8340",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 600,
+    "frame_range": [
+      1,
+      600
+    ],
+    "start_frame": 1,
+    "max_frames": null,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 13.884885333998682,
+    "fps": 43.212456247718045,
+    "tracks_sha256": "6fa45060dd347adbf68f4a027a86e080f106ab525d62b4c8535e673390b87a54",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:46:52+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou050_f1_None"
+  },
+  {
+    "sequence": "video_1",
+    "tracker": "bytetrack",
+    "conf": 0.5,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_1/img1",
+    "input_frames": 600,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.3086407499977213,
+    "fps": 45.33583768503828,
+    "tracks_sha256": "aec7185e51f82c566adeaf02af9d93ce82e6ae502ca15556df7b873d94a43e9b",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:38+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf050_iou050_f1_150"
+  },
+  {
+    "sequence": "video_2",
+    "dataset_frame_sha256": "a16388acb7932ccdc8245d38792d73f9b99891685d38e00abf5137f9185bbbad",
+    "tracker": "botsort",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_2/img1",
+    "input_frames": 1050,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 34.65216712500114,
+    "fps": 4.328733595763386,
+    "tracks_sha256": "8547b78ae3b2f2d89eed475f4ffd397dc02e0fbdc69fbc67fa0e5ecbd2cc4b8f",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:45:08+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf015_iou050_f301_150"
+  },
+  {
+    "sequence": "video_2",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_2/img1",
+    "input_frames": 1050,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 6.655357792002178,
+    "fps": 22.53823230664725,
+    "tracks_sha256": "887e34a8893b5ed10fd0ea24a26aa86b399ff7e7f59c48ac0228c0fc978b2ba2",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:41:52+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_2",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.4,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_2/img1",
+    "input_frames": 1050,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.6814857089993893,
+    "fps": 40.74442001318248,
+    "tracks_sha256": "2805f01fa573827e23501b2023b7d5e2dca84f9e0e0579a822078a89892bafd0",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:32+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou040_f1_150"
+  },
+  {
+    "sequence": "video_2",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_2/img1",
+    "input_frames": 1050,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 4.079607499999838,
+    "fps": 36.76824302338055,
+    "tracks_sha256": "579abfce1eab95ce9031df2ab20d863cea94a840207c5d6254420eb14da0f508",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:42+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou050_f1_150"
+  },
+  {
+    "sequence": "video_2",
+    "dataset_frame_sha256": "a16388acb7932ccdc8245d38792d73f9b99891685d38e00abf5137f9185bbbad",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_2/img1",
+    "input_frames": 1050,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.77364229199884,
+    "fps": 39.74939551584984,
+    "tracks_sha256": "23a77763b45d225a672f6c1506653d3837ee8588df66cfa7d0cdf2a814c5b9ee",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:44:33+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou050_f301_150"
+  },
+  {
+    "sequence": "video_2",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.7,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_2/img1",
+    "input_frames": 1050,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.590501583999867,
+    "fps": 41.77689286322442,
+    "tracks_sha256": "f974530cacf5a957972524ace2f6d296d7696ecacd07cc096225b9048b975952",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:36+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou070_f1_150"
+  },
+  {
+    "sequence": "video_2",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_2/img1",
+    "input_frames": 1050,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 4.322985834001884,
+    "fps": 34.69824000351666,
+    "tracks_sha256": "1b033122bb9df518ed2f5b769c6c71a2486f8d71d26916cb2ddba45e128c6d2c",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:41:45+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_2",
+    "tracker": "bytetrack",
+    "conf": 0.5,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_2/img1",
+    "input_frames": 1050,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.5285393750018557,
+    "fps": 42.51050762326299,
+    "tracks_sha256": "b97322e81ac78bb040b5a511d694775b94df42e8d6bf60e1dd456500402133b0",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:46+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf050_iou050_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "dataset_frame_sha256": "888f0e765026250601893917bd9018681378e3a8e1ab6a1ba0dac3abb3c721aa",
+    "tracker": "botsort",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 6.6934795409979415,
+    "fps": 22.409869049608876,
+    "tracks_sha256": "0c372e9a4ada21c7ee46971ccdd6348d8a4aa2e0fdb261984a59c396a35e11ef",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:50:58+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf015_iou050_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "dataset_frame_sha256": "888f0e765026250601893917bd9018681378e3a8e1ab6a1ba0dac3abb3c721aa",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.4,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 5.934938124999462,
+    "fps": 25.27406298781145,
+    "tracks_sha256": "ebaa137aa59bd57e521b35f253f21bdd438613062e067521be9d7e34780f6ae8",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:51:10+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou040_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 3.584333290997165,
+    "fps": 41.848786879489616,
+    "tracks_sha256": "557df0ac2e5cb90a366186176de560547f273331289fba5ba16fe4d255d0b631",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:41:59+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "dataset_frame_sha256": "888f0e765026250601893917bd9018681378e3a8e1ab6a1ba0dac3abb3c721aa",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 3.9740193750003527,
+    "fps": 37.745160716531906,
+    "tracks_sha256": "a36857c073207b51cb446a7aa4b78ed586497da479cecf3341dcca385401c7fd",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:45:14+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou050_f301_150"
+  },
+  {
+    "sequence": "video_3",
+    "dataset_frame_sha256": "888f0e765026250601893917bd9018681378e3a8e1ab6a1ba0dac3abb3c721aa",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.7,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 5.9336677079991205,
+    "fps": 25.279474244536214,
+    "tracks_sha256": "b5b90f60c5d01696ce111663b37f2428448f6ff551df27d0a0d49a65657059e2",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:51:16+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou070_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "dataset_frame_sha256": "888f0e765026250601893917bd9018681378e3a8e1ab6a1ba0dac3abb3c721aa",
+    "tracker": "botsort",
+    "conf": 0.5,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 5.50041549999878,
+    "fps": 27.27066709779166,
+    "tracks_sha256": "3f708afee4076eda614403afc5a84f2ea44be71b755563c485aa082e9f340619",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:51:04+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf050_iou050_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 2.5617644590020063,
+    "fps": 58.55339255445675,
+    "tracks_sha256": "b106a21e8f5898f067d8ca54a690ead407c58c10fd3a3e06e6420533b57abfa1",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:49+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou050_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.4,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.152773249999882,
+    "fps": 47.577160837686506,
+    "tracks_sha256": "79e5a6322cd46ef998f56a06174e6855056a76dc0ed079fb7c5be6ac1b3c7922",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:41+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou040_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.080154624996794,
+    "fps": 48.69885387658294,
+    "tracks_sha256": "79e5a6322cd46ef998f56a06174e6855056a76dc0ed079fb7c5be6ac1b3c7922",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:41:55+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "dataset_frame_sha256": "888f0e765026250601893917bd9018681378e3a8e1ab6a1ba0dac3abb3c721aa",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 2.544978292000451,
+    "fps": 58.939599002274484,
+    "tracks_sha256": "cd05ff53485353fdec4f51168afc7f14d94112b72ac312d7efbcdbf4eec41e32",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:45:10+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou050_f301_150"
+  },
+  {
+    "sequence": "video_3",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.7,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 2.3050751660011883,
+    "fps": 65.07379985365851,
+    "tracks_sha256": "d783409c12f33f0158e0276993ba342e8cf82b27a704522fb43b290243a25280",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:43+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou070_f1_150"
+  },
+  {
+    "sequence": "video_3",
+    "tracker": "bytetrack",
+    "conf": 0.5,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_3/img1",
+    "input_frames": 837,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 2.3477320410020184,
+    "fps": 63.89144816372638,
+    "tracks_sha256": "43e99b540e580d6b7c44a6bcb8ed34cfcc359fefdbfa346492e7dfb87e759ccc",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:51+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf050_iou050_f1_150"
+  },
+  {
+    "sequence": "video_4",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_4/img1",
+    "input_frames": 900,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 5.846845166997809,
+    "fps": 25.654860991815998,
+    "tracks_sha256": "19a87b671e2ab6d43397877264d7a9b21cfa7487c63c9679b8f2343c57c18980",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:08+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_4",
+    "dataset_frame_sha256": "ad08f8cb6ecc99fa665a536fba3523b6d7d6b49de655988b9b42f26a209694ed",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_4/img1",
+    "input_frames": 900,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 5.942696624999371,
+    "fps": 25.241066382051073,
+    "tracks_sha256": "6e4735328e2c046dd2b2d320af0fbc3a1998349d192065a678d6c1e31355bb90",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:45:24+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou050_f301_150"
+  },
+  {
+    "sequence": "video_4",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_4/img1",
+    "input_frames": 900,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.957098540999141,
+    "fps": 37.90656170066617,
+    "tracks_sha256": "3ec575c45425ea4846090d24847ca1e5322b1d7db48be79bb5ca8a6f9fdef07d",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:55+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou050_f1_150"
+  },
+  {
+    "sequence": "video_4",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.4,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_4/img1",
+    "input_frames": 900,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.9627802920003887,
+    "fps": 37.852212070097096,
+    "tracks_sha256": "d9c15eabfb5d5030d43464bb9abce083f1de5947690c52f64604be1987356c6b",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:47+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou040_f1_150"
+  },
+  {
+    "sequence": "video_4",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_4/img1",
+    "input_frames": 900,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.848943249999138,
+    "fps": 38.97173594337448,
+    "tracks_sha256": "d9c15eabfb5d5030d43464bb9abce083f1de5947690c52f64604be1987356c6b",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:02+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_4",
+    "dataset_frame_sha256": "ad08f8cb6ecc99fa665a536fba3523b6d7d6b49de655988b9b42f26a209694ed",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_4/img1",
+    "input_frames": 900,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.9272387500022887,
+    "fps": 38.194774891114676,
+    "tracks_sha256": "abbfaa11a4cbc6ab64d238eb16c42388c6744b0b7bed7bc60685afc7dbb2481b",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:45:18+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou050_f301_150"
+  },
+  {
+    "sequence": "video_4",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.7,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_4/img1",
+    "input_frames": 900,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.8484743749977497,
+    "fps": 38.976484025592015,
+    "tracks_sha256": "d9c15eabfb5d5030d43464bb9abce083f1de5947690c52f64604be1987356c6b",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:51+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou070_f1_150"
+  },
+  {
+    "sequence": "video_4",
+    "tracker": "bytetrack",
+    "conf": 0.5,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_4/img1",
+    "input_frames": 900,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.7770264169994334,
+    "fps": 39.71378101166786,
+    "tracks_sha256": "4d1bf8bf0b11cb5d095e7f8af480d699a509514eef31fd999101fb8d2219fb58",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:59+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf050_iou050_f1_150"
+  },
+  {
+    "sequence": "video_5",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5/img1",
+    "input_frames": 750,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 5.790488124999683,
+    "fps": 25.904551872301475,
+    "tracks_sha256": "f578b1961a9cd323d023e9c2938ddc5067990b5d4888d2cc8e641a6931d5bec4",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:18+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_5",
+    "dataset_frame_sha256": "fbb4014016a39de5dd3f644c2b60820839041cf6a37238b678f1fd212af7c4b5",
+    "tracker": "botsort",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5/img1",
+    "input_frames": 750,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": "cpu",
+    "reid_enabled": true,
+    "reid_sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "elapsed_seconds": 5.562457583000651,
+    "fps": 26.966497768614527,
+    "tracks_sha256": "6248d4959f18690110334b4030be60cfffa77bf78e49ae978a442a2547e1bb1f",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:45:34+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "botsort_conf030_iou050_f301_150"
+  },
+  {
+    "sequence": "video_5",
+    "tracker": "bytetrack",
+    "conf": 0.15,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5/img1",
+    "input_frames": 750,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.7861967499993625,
+    "fps": 39.617592508900984,
+    "tracks_sha256": "4dbb9ac393e99dc5e9c2c4655d20e8b1e8fe83f39394e640c114785048a60f58",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:02+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf015_iou050_f1_150"
+  },
+  {
+    "sequence": "video_5",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.4,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5/img1",
+    "input_frames": 750,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.774973957999464,
+    "fps": 39.73537345393822,
+    "tracks_sha256": "1ccc63bfcf60609aa222280cbd457e55e5b5f8a757a07be15b14671746ef78f2",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:55+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou040_f1_150"
+  },
+  {
+    "sequence": "video_5",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5/img1",
+    "input_frames": 750,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.743526957998256,
+    "fps": 40.06916517043281,
+    "tracks_sha256": "1ccc63bfcf60609aa222280cbd457e55e5b5f8a757a07be15b14671746ef78f2",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:42:12+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou050_f1_150"
+  },
+  {
+    "sequence": "video_5",
+    "dataset_frame_sha256": "fbb4014016a39de5dd3f644c2b60820839041cf6a37238b678f1fd212af7c4b5",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5/img1",
+    "input_frames": 750,
+    "frames_processed": 150,
+    "frame_range": [
+      301,
+      450
+    ],
+    "start_frame": 301,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.7395112499980314,
+    "fps": 40.11219380609671,
+    "tracks_sha256": "b13c203b514c52ba557927a3ad6afcfb3e18120af3543a081c36d63a2cea29cc",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:45:28+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou050_f301_150"
+  },
+  {
+    "sequence": "video_5",
+    "tracker": "bytetrack",
+    "conf": 0.3,
+    "iou": 0.7,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5/img1",
+    "input_frames": 750,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.6703268339988426,
+    "fps": 40.86829505495948,
+    "tracks_sha256": "a1ea408a604bac3405cef8f45c30165ea5bb86da13831e6bc3cba914d9704b2d",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:58+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf030_iou070_f1_150"
+  },
+  {
+    "sequence": "video_5",
+    "tracker": "bytetrack",
+    "conf": 0.5,
+    "iou": 0.5,
+    "source": "/Users/tridao/Documents/Personal/VINAITC/Week_4/K4-Track4-Day22/data/extracted/data_lab21/video_5/img1",
+    "input_frames": 750,
+    "frames_processed": 150,
+    "frame_range": [
+      1,
+      150
+    ],
+    "start_frame": 1,
+    "max_frames": 150,
+    "model": "yolo26n.pt",
+    "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+    "imgsz": 640,
+    "classes": [
+      0
+    ],
+    "nms_mode": "one-to-many; nms=None",
+    "device": "mps",
+    "reid_device": null,
+    "reid_enabled": false,
+    "reid_sha256": null,
+    "elapsed_seconds": 3.7285112499994284,
+    "fps": 40.230534372136596,
+    "tracks_sha256": "99d15eadae147550c9bebc3f40489e5e6800a99579b07d9e9d5977efec65b4e0",
+    "versions": {
+      "torch": "2.14.1",
+      "ultralytics": "8.4.174",
+      "boxmot": "25.0.0",
+      "numpy": "2.4.6"
+    },
+    "seed": 42,
+    "completed_at": "2026-10-08T15:43:06+0700",
+    "bbox_origin": "one-based",
+    "format_correction": "Translate pre-final zero-based left/top by +1 to conform to MOTChallenge; assignments unchanged.",
+    "experiment_id": "bytetrack_conf050_iou050_f1_150"
+  }
+]

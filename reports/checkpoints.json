@@ -29,5 +29,21 @@
       "artifacts/tests_cp2.log"
     ],
     "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
+  },
+  "CP3": {
+    "status": "PASS",
+    "evidence": [
+      "reports/experiment_log.csv",
+      "reports/selected_configs.json",
+      "artifacts/experiment_manifest.json",
+      "artifacts/validation_cp3.log",
+      "artifacts/tests_cp3.log",
+      "runs/nop_bai/video_1.txt",
+      "runs/nop_bai/video_2.txt",
+      "runs/nop_bai/video_3.txt",
+      "runs/nop_bai/video_4.txt",
+      "runs/nop_bai/video_5.txt"
+    ],
+    "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
   }
 }
