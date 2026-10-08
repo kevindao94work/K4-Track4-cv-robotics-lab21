@@ -8,5 +8,16 @@
       "requirements-lock.txt"
     ],
     "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
+  },
+  "CP1": {
+    "status": "PASS",
+    "evidence": [
+      "artifacts/scene_analysis/dataset_metadata.json",
+      "artifacts/scene_analysis/scene_analysis.md",
+      "notebooks/on_tap_metrics.ipynb",
+      "artifacts/notebook_execution.log",
+      "artifacts/tests_cp1.log"
+    ],
+    "remote_status": "verification recorded in reports/push_verification.jsonl after commit"
   }
 }
