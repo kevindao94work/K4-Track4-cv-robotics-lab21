@@ -1,6 +1,6 @@
 # Lab 21 — Theo dõi nhiều đối tượng
 
-Kho mã: https://github.com/kevindao94work/cv-robotics-lab21, ở chế độ riêng tư (PRIVATE), nhánh `main`, remote `origin`.
+Kho mã: https://github.com/kevindao94work/K4-Track4-cv-robotics-lab21, ở chế độ riêng tư (PRIVATE), nhánh `main`, remote `origin`.
 
 Đã hoàn thành các yêu cầu trong `IMPLEMENTATION_GUIDE.md` trên dữ liệu thật được chỉ định: 51 lượt thí nghiệm, năm kết quả MOT cho toàn bộ chuỗi, notebook đã thực thi, chỉ số tính bằng TrackEval và báo cáo tiếng Việt. Trạng thái nghiệm thu và bằng chứng của từng mốc được ghi trong `reports/checkpoints.json`. Mỗi mốc chỉ được công nhận hoàn thành sau khi đạt các kiểm tra nghiệm thu.
 
